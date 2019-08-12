@@ -1,0 +1,12 @@
+"files": {
+		"README.md": "",
+		"index.js": "",
+		"module.json": ""
+	},
+	"defs": {
+		"C_PARTY_MARKER": 1,
+		"S_PARTY_MARKER": 1,
+		"S_SPAWN_USER": 15,
+		"S_DESPAWN_USER": 3,
+	}
+}

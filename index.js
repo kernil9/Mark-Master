@@ -105,6 +105,10 @@ module.exports = function Marker(mod) {
         Players.push(event.name);
 		Ids.push(event.gameId);
     });
+	
+	mod.hook('S_DESPAWN_USER', 3, event => {
+        delete Players[event.name];
+    });
 
 		 command.add('mk', {
 		mark(name,color){	
