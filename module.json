@@ -6,6 +6,6 @@
 	"options": {
 		"niceName": "Mark-Master"
 	},
-	"servers": [""],
-	"supportUrl": ""
+	"servers": ["https://raw.githubusercontent.com/kernil9/Mark-Master/master/"],
+	"supportUrl": "https://github.com/kernil9/Mark-Master/issues"
 }
