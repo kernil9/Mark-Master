@@ -1,0 +1,11 @@
+{
+	"disableAutoUpdate": false,
+	"name": "Mark-Master",
+	"author": "Kernel",
+	"description": "Marker module for easier targets marking.",
+	"options": {
+		"niceName": "Mark-Master"
+	},
+	"servers": [""],
+	"supportUrl": ""
+}
