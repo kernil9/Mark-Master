@@ -86,7 +86,23 @@ module.exports = function Marker(mod) {
 				}
 			}
 		}*/
+		/*
+		remarks all players that were previously marked.
+		*/
+		function remark()
+		{
+			mod.toServer('C_PARTY_MARKER',1, {
+					markers: markerss
+				});
+				mod.toServer('S_PARTY_MARKER',1, {
+					markers: markerss
+				});
+				msg = "Players marked."
+		}
 		
+		/*
+		removes all marks.
+		*/
 		function removeAll()
 		{
 			markerss.splice(0,markerss.length);
@@ -122,6 +138,9 @@ module.exports = function Marker(mod) {
 		rmall(){
 			removeAll();
 			command.message(msg);
+		},
+		remark(){
+			remark();
 		}
 		 });
 }
