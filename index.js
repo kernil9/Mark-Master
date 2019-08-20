@@ -23,7 +23,7 @@ module.exports = function Marker(mod) {
 					markers: markerss
 				});
 				msg = "Player marked."
-				marked.push(n);
+				marked.push(n.toLowerCase());
 			}
 			else
 			{
