@@ -12,14 +12,9 @@ module.exports = function Marker(mod) {
 			{
 				color = 0;
 			}
-			if(Players.indexOf(n) >= 0)
+			if(Players.indexOf(n.toLowerCase()) >= 0)
 			{
 				target = Ids[Players.indexOf(n)];
-				/*if(marked.indexOf(n) >= 0)
-				{
-					mod.log("okay yeah i do this");
-					removeMark(n);
-				}*/
 				markerss.push({color,target});
 				mod.toServer('C_PARTY_MARKER',1, {
 					markers: markerss
@@ -118,7 +113,7 @@ module.exports = function Marker(mod) {
     });
 		
 		mod.hook('S_SPAWN_USER', 15, event => {
-        Players.push(event.name);
+        Players.push(event.name.toLowerCase());
 		Ids.push(event.gameId);
     });
 	
@@ -141,6 +136,7 @@ module.exports = function Marker(mod) {
 		},
 		remark(){
 			remark();
+			command.message(msg);
 		}
 		 });
 }
