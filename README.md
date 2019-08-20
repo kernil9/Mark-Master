@@ -13,5 +13,5 @@ Example: !mk mark Icy 1 - to give player "Icy" a yellow mark.
 
 # Known issues
 
-- Marking a player twice will give them two marks instead of removing the previous mark then adding the new one.
+- Marking a player twice with different colors will give them two marks instead of removing the previous mark then adding the new one.
 - Does not support removing a mark from a certain player....yet.
