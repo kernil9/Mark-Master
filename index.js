@@ -27,7 +27,7 @@ module.exports = function Marker(mod) {
 			}
 			else
 			{
-				msg = "Player not found, Please make sure you typed the name correctly including capital letters."
+				msg = "Player not found, Please make sure you typed the name correctly."
 			}
 		}
 		
