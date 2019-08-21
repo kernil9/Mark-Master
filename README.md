@@ -1,5 +1,6 @@
 # Mark-Master
 A module that allows you to mark people through proxy channel instead of having to select them and manually mark them.
+Please note that you need to be party leader or raid leader for it to actually mark the player.
 
 # Commands
 * !mk mark name color    - To mark a player with desired color.
