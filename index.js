@@ -14,7 +14,7 @@ module.exports = function Marker(mod) {
 			}
 			if(Players.indexOf(n.toLowerCase()) >= 0)
 			{
-				target = Ids[Players.indexOf(n)];
+				target = Ids[Players.indexOf(n.toLowerCase())];
 				markerss.push({color,target});
 				mod.toServer('C_PARTY_MARKER',1, {
 					markers: markerss
