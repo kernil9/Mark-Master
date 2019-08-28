@@ -31,6 +31,20 @@ module.exports = function Marker(mod) {
 			}
 		}
 		
+		function markMe()
+		{
+			markerss.push({color: 1, target: mod.game.me.gameId});
+			mod.toServer('C_PARTY_MARKER',1, {
+					markers: markerss
+				});
+				mod.toServer('S_PARTY_MARKER',1, {
+					markers: markerss
+				});
+				/*msg = "Player marked."
+				marked.push(n.toLowerCase());*/
+		}
+		
+		
 		/*function removeMark(n) //Fix array
 		{
 			/*if(Players.indexOf(n) >= 0)
@@ -137,6 +151,10 @@ module.exports = function Marker(mod) {
 		remark(){
 			remark();
 			command.message(msg);
+		},
+		markme()
+		{
+			markMe();
 		}
 		 });
 }
