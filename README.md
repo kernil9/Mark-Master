@@ -13,6 +13,8 @@ Example: !mk mark Icy 1 - to give player "Icy" a yellow mark.
 
 *  !mk remark            - To remark all players who have been marked before using the mark command.
 
+*  !mk markme            - To mark yourself.
+
 # Known issues
 
 - Marking a player twice with different colors will give them two marks instead of removing the previous mark then adding the new one.
